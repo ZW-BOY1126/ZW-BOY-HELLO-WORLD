@@ -1,0 +1,10 @@
+address="李明 13567102011 liming@qq.com;\
+刘东 1234567891 liuodng@qq.com;\
+张晓 1234567892 zhangxiao@qq.com;\
+曾伟 18801007864 zengwei@qq.com;\
+小红 13884672181 xiaohong@qq.com;"
+name=input("请输入你要查找的名字：")
+start=address.find(name)
+temp=address[start:]
+end=temp.find(";")+start
+print(address[start:end])
